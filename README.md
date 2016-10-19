@@ -1,1 +1,3 @@
-Simple CMake blank project. Use to get up and running for a new project.
+An implementation of a mir shell. Doing things in unique ways.
+
+http://voices.canonical.com/alan.griffiths/category/miral/egmde/
