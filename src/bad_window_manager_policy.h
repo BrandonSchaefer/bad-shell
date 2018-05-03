@@ -32,6 +32,21 @@ public:
     bool handle_pointer_event(MirPointerEvent const* pev) override;
     bool handle_touch_event(MirTouchEvent const* tev) override;
 
+    mir::geometry::Rectangle confirm_placement_on_display(
+        miral::WindowInfo const& , MirWindowState ,
+        mir::geometry::Rectangle const& new_placement) override
+    {
+        return new_placement;
+    }
+
+    void handle_request_drag_and_drop(miral::WindowInfo& ) override
+    {
+    }
+
+    void handle_request_move(miral::WindowInfo& , MirInputEvent const* ) override
+    {
+    }
+
 private:
     int current_scan_code{0};
 
